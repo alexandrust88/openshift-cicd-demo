@@ -2,7 +2,7 @@
 
 set -e -u -o pipefail
 declare -r SCRIPT_DIR=$(cd -P $(dirname $0) && pwd)
-declare PRJ_PREFIX="demo"
+declare PRJ_PREFIX="demo-$RANDOM"
 declare COMMAND="help"
 
 valid_command() {
